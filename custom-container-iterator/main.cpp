@@ -35,7 +35,7 @@ public:
         /// Operators
         self_type &operator++() { _ptr++; return *this; }
         self_type operator++(int) { self_type i = *this; _ptr++; return i; }
-        reference operator*() { return *_ptr; }
+        reference &operator*() { return *_ptr; }
         pointer operator->() { return _ptr; }
         bool operator==(const self_type& rhs) const { return _ptr == rhs._ptr; }
         bool operator!=(const self_type& rhs) const { return _ptr != rhs._ptr; }

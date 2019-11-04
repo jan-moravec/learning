@@ -1,1 +1,1 @@
-test
+This is just collection of some code I found interesting.
